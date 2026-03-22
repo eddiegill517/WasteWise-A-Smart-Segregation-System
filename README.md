@@ -25,29 +25,7 @@ WasteWise is a fully autonomous smart waste segregation system that classifies a
 
 The entire pipeline — from image capture to mechanical actuation — runs on a single **Raspberry Pi 4 Model B (8GB)**, making it cost-effective, compact, and deployable in households, college campuses, offices, and public spaces.
 
----
-## System Architecture
 
-**
-┌─────────────────────────────────────────────────────────┐
-│                        WASTEWISE BIN                    │ 
-│                                                         │
-│  [WASTE INPUT]  ──►  [DC SLIDING MOTOR]                 │
-│                           │                             │
-│                    [Pi CAMERA MODULE]                   │
-│                           │                             │
-│                   [RASPBERRY PI 4 8GB]                  │
-│                    ┌──────┴──────┐                      │
-│              [YOLOv5 Model]  [OpenCV]                   │
-│                    └──────┬──────┘                      │
-│                           │ Classification Result       │
-│               ┌───────────┼───────────┐                 │
-│          [RECYCLABLE]  [NON-REC.]  [ORGANIC]            │
-│          Servo 2,3      Servo 1,4   Servo 4             │
-│               │              │          │               │
-│         [COMPARTMENT]  [COMPARTMENT]  [COMPARTMENT]     │
-└─────────────────────────────────────────────────────────┘
-**
 ---
 
 ## ⚙️ Hardware Components
