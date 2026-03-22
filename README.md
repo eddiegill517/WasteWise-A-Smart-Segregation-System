@@ -103,7 +103,6 @@ Each compartment has a detachable side log for convenient emptying without distu
 - **Split:** 70% Train (564) / 20% Validation (158) / 10% Test (80)
 - **Data Collection:** Images captured on TIET campus premises to ensure domain relevance; existing open-source datasets supplemented and expanded with real-world photos
 
-> 📌 Dataset available on Roboflow: [Smart Bin Detection System v1](#) *(add your link here)*
 
 ---
 
